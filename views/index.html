@@ -11,28 +11,31 @@
 		
 		-->
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Björn Pfarr</title>
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="style/style.css"/>
 		<link rel="stylesheet" href="animate/animate.css"/>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
 		<link rel="stylesheet" href="onepagescroll/css/onepagescroll.css"/>
 		<!-- Scripts -->
 		<script src="jquery/jquery.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="onepagescroll/js/onepagescroll.min.js"></script>
+		<script src="viewportchecker/viewportchecker.js"></script>
 		<script src="script/script.js"></script>
 	</head>
 	<body>
 		<div id="page">
 			<section class="page" id="home">
-				<h1>Home</h1>
+				
 			</section>
 			<section class="page" id="about">
-				<h1>About</h1>
+				
 			</section>
 			<section class="page" id="projects">
-				<h1>Projects</h1>
+				
 			</section>
 		</div>
 		<nav class="navbar navbar-default" role="navigation">
@@ -46,12 +49,17 @@
 					</button>
 					<a id="home_link" class="navbar-brand" href="./"><i class="glyphicon glyphicon-cloud"></i> Björn Pfarr</a>
 				</div>
-				<div class="collapse navbar-collapse"
-					id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a id="about_link">About</a></li>
 						<li><a id="projects_link" href="#projects">Projects</a></li>
 					</ul>
+					<div class="navbar-form navbar-right" role="search">
+				        <div class="form-group">
+				          <span><i class="glyphicon glyphicon-search"></i></span>
+				          <input style="width: 75px" id="search" type="text" class="form-control" placeholder="Search">
+				        </div>
+			      	</div>
 				</div>
 			</div>
 		</nav>

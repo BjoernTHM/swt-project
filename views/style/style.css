@@ -1,7 +1,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	background-color: #FFCC66;
+	background-color: #000;
 	overflow-y: auto;
 }
 
@@ -17,6 +17,14 @@ body, html {
 	background-color: #333;
 	border: 0;
 	margin: 0;
+}
+
+.navbar-nav, .navbar-right, .navbar-left, .navbar-header {
+	border: 0;
+}
+
+.navbar-toggle {
+	border-radius: 0;
 }
 
 .navbar-nav li a {
@@ -46,15 +54,26 @@ body, html {
 }
 
 #projects {
-	background-color: #995566;
+	background-color: #FF9966;
 }
 
 #about {
-	background-color: #999933;
+	background-color: #33CCFF;
 }
 
 #page {
 	margin-top: 50px;
+}
+
+#search {
+	background-color: #222;
+	border-color: #444;
+	color: #fff;
+	transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+	-moz-transition: width 0.5s ease;
+	-o-transition: width 0.5s ease;
+	-ms-transition: width 0.5s ease;
 }
 
 a {
@@ -65,4 +84,19 @@ a {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+#search::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #aaa;
+}
+#search:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+#search::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+#search:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #aaa;
 }
