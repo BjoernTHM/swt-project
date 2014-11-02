@@ -1,8 +1,15 @@
 body, html {
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
-	background-color: #FFCC66;
-	overflow-y: auto;
+	background-color: #000;
+	min-width: 450px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .navbar, .navbar-default, .form-control, .btn {
@@ -19,8 +26,20 @@ body, html {
 	margin: 0;
 }
 
+.navbar-nav, .navbar-right, .navbar-left, .navbar-header {
+	border: 0;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
 .navbar-nav li a {
 	color: #fff !important;
+}
+
+*[data-onscroll-animation] {
+	display: none;
 }
 
 .navbar-nav li a:hover {
@@ -46,15 +65,30 @@ body, html {
 }
 
 #projects {
-	background-color: #995566;
+	background-color: #FF9966;
 }
 
 #about {
-	background-color: #999933;
+	background-color: #33CCFF;
 }
 
 #page {
 	margin-top: 50px;
+}
+
+#contact {
+	background-color: #ccc;
+}
+
+#search {
+	background-color: #222;
+	border-color: #444;
+	color: #fff;
+	transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+	-moz-transition: width 0.5s ease;
+	-o-transition: width 0.5s ease;
+	-ms-transition: width 0.5s ease;
 }
 
 a {
@@ -65,4 +99,63 @@ a {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+#search::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #aaa;
+}
+#search:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+#search::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+#search:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #aaa;
+}
+
+@media (max-width: 992px) {
+	.optional {
+		display: none !important;
+	}
+}
+
+.title i {
+	line-height: 70px;
+	vertical-align: middle;
+	font-size: 50px;
+}
+
+.title {
+	z-index: 10;
+	font-size: 60px;
+	widht: 100%;
+	text-align: center;
+}
+
+#contact .background-image {
+	color: #bbb;
+}
+
+#about .background-image {
+	color: #22C0F3;
+}
+
+#projects .background-image {
+	color: #ef8754;
+}
+
+#home .background-image {
+	color: #eebb55;
+}
+
+.background-image {
+	margin-top: -200px;
+	top: 50%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 400px;
 }
