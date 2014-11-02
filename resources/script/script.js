@@ -90,14 +90,17 @@ $(document).ready(function() {
 	
 });
 
+var lastIndex = 0;
 function disappear(index) {
-	var elements = $(".page").eq(index).find("*[data-onscroll-animation]");
-	elements.each(function(i) {
-		elements.eq(i).css({
-			"display" : ""
-		}).removeClass(elements.eq(i).data("onscroll-animation"));
-	});
-	
+	if (lastIndex != index) {
+		var elements = $(".page").eq(index).find("*[data-onscroll-animation]");
+		elements.each(function(i) {
+			elements.eq(i).css({
+				"display" : ""
+			}).removeClass(elements.eq(i).data("onscroll-animation"));
+		});
+		lastIndex = index;
+	}
 }
 
 function appear(index) {
