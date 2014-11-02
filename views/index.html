@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- 
+<head>
+<!-- 
 		
 		git commit -a 
 		cctrlapp bjoernpfarr/default push
@@ -10,58 +10,158 @@
 		localhost/swt-project/bjoernpfarr/views/
 		
 		-->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Björn Pfarr</title>
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="style/style.css"/>
-		<link rel="stylesheet" href="animate/animate.css"/>
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
-		<link rel="stylesheet" href="onepagescroll/css/onepagescroll.css"/>
-		<!-- Scripts -->
-		<script src="jquery/jquery.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="onepagescroll/js/onepagescroll.min.js"></script>
-		<script src="viewportchecker/viewportchecker.js"></script>
-		<script src="script/script.js"></script>
-	</head>
-	<body>
-		<div id="page">
-			<section class="page" id="home">
-				
-			</section>
-			<section class="page" id="about">
-				
-			</section>
-			<section class="page" id="projects">
-				
-			</section>
-		</div>
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed"
-						data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
-					</button>
-					<a id="home_link" class="navbar-brand" href="./"><i class="glyphicon glyphicon-cloud"></i> Björn Pfarr</a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a id="about_link">About</a></li>
-						<li><a id="projects_link" href="#projects">Projects</a></li>
-					</ul>
-					<div class="navbar-form navbar-right" role="search">
-				        <div class="form-group">
-				          <span><i class="glyphicon glyphicon-search"></i></span>
-				          <input style="width: 75px" id="search" type="text" class="form-control" placeholder="Search">
-				        </div>
-			      	</div>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Björn Pfarr</title>
+<!-- Stylesheets -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="style/style.css" />
+<link rel="stylesheet" href="animate/animate.css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="onepagescroll/css/onepagescroll.css" />
+<!-- Scripts -->
+<script src="jquery/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="onepagescroll/js/onepagescroll.min.js"></script>
+<script src="script/script.js"></script>
+</head>
+<body>
+	<div id="page">
+		<section class="page" id="home">
+			<i class="glyphicon glyphicon-comment animated background-image bounceIn" style="display: block" data-onscroll-animation="bounceIn"></i>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="title animated fadeInDown" style="display: block" data-onscroll-animation="fadeInDown">Hello World!</h1>
+					</div>
+					<div class="col-md-3"><br/><br/><br/></div>
+					<div class="col-md-6 animated fadeInLeft" style="display: block" data-onscroll-animation="fadeInLeft">
+						<br/><br/>
+						A 'Hello World' to y'all - this my <s>first</s> Website!<br/><br/>
+						<br/>
+						As a result of boredom (this page really goes beyond the scope, actually a simple bootstrap / text page was required) and the duty to do my homework I am sharing this website with ya'!
+						<br/><br/>
+						This page is using the following libraries:<br/><br/>
+						<ul>
+							<li>bootstrap - <a target="blank" href="http://getbootstrap.com/">click <i class="glyphicon glyphicon-hand-up"></i></a></li>
+							<li>jQuery - <a target="blank" href="http://jquery.com/">click <i class="glyphicon glyphicon-hand-up"></i></a></li>
+							<li>animate.css - <a target="blank" href="http://daneden.github.io/animate.css/">click <i class="glyphicon glyphicon-hand-up"></i></a></li>
+							<li>font awesome - <a target="blank" href="http://fortawesome.github.io/Font-Awesome/">click <i class="glyphicon glyphicon-hand-up"></i></a></li>
+							<li>onepagescroll - <a target="blank" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html">click <i class="glyphicon glyphicon-hand-up"></i></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</nav>
-	</body>
+		</section>
+		<section class="page" id="about">
+					<i class="glyphicon glyphicon-user animated background-image" data-onscroll-animation="bounceIn"></i>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+							<h1 class="title animated" data-onscroll-animation="fadeInDown">About me</h1>
+					</div>
+					<div class="col-sm-3"><br/><br/><br/></div>
+					<div class="col-sm-6 animated" data-onscroll-animation="fadeInUp"><br/><br/>
+						Hi there!<br/>
+						<br/>
+						Born in Marburg I am currently living and studying in Gießen, a city near Frankfurt / Germany. From monday to friday I listen to the lectures in Software Engineering of my University. Sometimes it's a bit boring, but in general I am really in love with the ones and zeros, which dominate the world. :)
+						<br/><br/>
+						In my free time I am 'nerding' around with my buddys. 'One program per day' is one of my principles of life. But wait - my skin is not as white as cheese - I also know what this round, yellow thing is, which sticks on the sky. 
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="projects">
+					<i class="glyphicon glyphicon-cog animated background-image" data-onscroll-animation="bounceIn"></i>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+							<h1 class="title animated" data-onscroll-animation="fadeInDown">Projects</h1>
+					</div>
+					<div class="col-md-3"><br/><br/><br/></div>
+					<div class="col-md-6" style="text-align: center;" >
+						<br/><br/><br/><h2>This website ...</h2>
+						<br/><br/>... and many others. :)
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="contact">
+			<i class="glyphicon glyphicon-send animated background-image" data-onscroll-animation="bounceIn"></i>
+			<div class="container">
+				<div class="row">
+							<div class="col-xs-12"><h1 class="title animated" data-onscroll-animation="fadeInDown">Contact</h1></div>
+					<div class="col-md-6 animated" data-onscroll-animation="fadeInLeft">
+			<h1>Impressum</h1>
+			<h2>Angaben gemäß § 5 TMG:</h2>
+			<p>
+				Björn Pfarr<br /> Adolph-Kolping-Straße 1<br /> 35392 Gießen
+			</p>
+			<h2>Kontakt:</h2>
+			<table>
+				<tr>
+					<td>Telefon:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>E-Mail:</td>
+					<td>bjoern.pfarr@mni.thm.de</td>
+				</tr>
+			</table>
+			<p> </p>
+			<p>Quelle: <em><a href="http://www.e-recht24.de/impressum-generator.html">http://www.e-recht24.de</a></em>
+			</p>
+			</div>
+			<div class="col-md-6 animated optional" data-onscroll-animation="fadeInRight">
+			<h1>Haftungsausschluss</h1>
+			<p>
+				<strong>Haftung für Inhalte</strong>
+			</p>
+			<p>Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene
+				Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+				verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter
+				jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+				Informationen zu überwachen oder nach Umständen zu forschen, die auf
+				eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+				Entfernung oder Sperrung der Nutzung von Informationen nach den
+				allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche
+				Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
+				konkreten Rechtsverletzung möglich. Bei Bekanntwerden von
+				entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend
+				entfernen.</p>
+			</div>
+			</div></div>
+			
+		</section>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a id="home_link" class="navbar-brand" href="./"><i
+					class="glyphicon glyphicon-cloud"></i> Björn Pfarr</a>
+			</div>
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a id="about_link">About</a></li>
+					<li><a id="projects_link">Projects</a></li>
+					<li><a id="contact_link">Contact</a></li>
+				</ul>
+				<div class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<span><i class="glyphicon glyphicon-search"></i></span> <input
+							style="width: 75px" id="search" type="text" class="form-control"
+							placeholder="Search">
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</body>
 </html>
