@@ -42,6 +42,13 @@ $(document).ready(function() {
 		$("#page").moveTo(1);
 	});
 	
+	$("#license_link").click(function(e) {
+		//Prevent default link behaviour
+		e.preventDefault();
+		//Scroll to the about page
+		$("#page").moveTo(5);
+	});
+	
 	//Register the link listener
 	$("#about_link").click(function(e) {
 		//Prevent default link behaviour
@@ -130,7 +137,11 @@ function showSearchResults(search) {
 		.add("#page table")
 		.add("#page tr")
 		.add("#page td")
-		.add("#page a");
+		.add("#page a")
+		.add("#page .col-md-6")
+		.add("#page .col-md-12")
+		.add("#page .col-lg-12")
+		.add("#page .col-md-3");
 	if (search.length > 0) {
 		for (var i = 0; i < searchElements.length; i++) {
 			if (searchElements.eq(i).text().toLowerCase().indexOf(search.toLowerCase()) !== -1) {

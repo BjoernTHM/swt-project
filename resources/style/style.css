@@ -143,6 +143,14 @@ a {
 	color: #22C0F3;
 }
 
+#license .background-image {
+	color: #00ACAC;
+}
+
+#license {
+	background-color: #00CCCC;
+}
+
 #projects .background-image {
 	color: #ef8754;
 }
