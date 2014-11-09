@@ -45,8 +45,8 @@ $(document).ready(function() {
 	$("#license_link").click(function(e) {
 		//Prevent default link behaviour
 		e.preventDefault();
-		//Scroll to the about page
-		$("#page").moveTo(5);
+		//Scroll to the license page
+		$("#page").moveTo(6);
 	});
 	
 	//Register the link listener
@@ -65,11 +65,19 @@ $(document).ready(function() {
 		$("#page").moveTo(3);
 	});
 	
-	$('#contact_link').click(function(e) {
+	//Register the link listener
+	$("#feature_link").click(function(e) {
 		//Prevent default link behaviour
 		e.preventDefault();
 		//Scroll to the projects page
 		$("#page").moveTo(4);
+	});
+	
+	$('#contact_link').click(function(e) {
+		//Prevent default link behaviour
+		e.preventDefault();
+		//Scroll to the projects page
+		$("#page").moveTo(5);
 	});
 	
 	//Register search listener
